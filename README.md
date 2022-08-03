@@ -325,3 +325,26 @@ For additional support, check out these guides on Heroku:
 [postgres downloads page]: https://postgresapp.com/downloads.html
 [heroku rails deploying guide]: https://devcenter.heroku.com/articles/getting-started-with-rails6
 [troubleshooting guide on heroku]: https://devcenter.heroku.com/articles/getting-started-with-rails6#troubleshooting
+
+# Notes
+
+To Check if Server is stepping out on you:
+
+$: sudo lsof -i -P | grep LISTEN | grep :$PORT
+
+$: kill -9 SPECIFICPIDNUM
+
+To Upgrade Postgres:
+
+$: brew postgresql-upgrade-database
+
+If pid file is blocking Postgres:
+
+$: rm /usr/local/var/postgres/postmaster.pid
+
+$: rew services restart postgresql
+
+To Start:
+
+rails s: run the backend on http://localhost:3000
+npm start --prefix client: run the frontend on http://localhost:4000
