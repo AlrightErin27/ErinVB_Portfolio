@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+/* font-family: 'Rock Salt', cursive; */
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap");
+/* font-family: "Josefin Slab", serif; */
+
+* {
+  background-color: rgba(254, 233, 226, 255);
+  font-family: "Josefin Slab", serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* HOME PAGE */
+.H-header {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0rem;
+}
+#H-header-p {
+  font-family: "Rock Salt", cursive;
+  font-size: 2rem;
+}
+#H-about {
+  text-align: center;
+  margin-top: -1.5rem;
+  font-size: 1.5rem;
+}
+.H-lowerPg {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+#H-logo-container {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+#H-list-title {
+  font-family: "Josefin Slab", serif;
+}
+.Home ul {
+  width: 25vw;
+  position: absolute;
+  background-color: transparent;
+}
+.Home li {
+  display: inline;
+  background-color: transparent;
+}
+.rotate {
+  animation: rotation 20s;
+  background-color: transparent;
+  z-index: 0;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.linear {
+  animation-timing-function: linear;
+}
+.infinite {
+  animation-iteration-count: infinite;
+}
+
+/* NAV BAR */
+nav {
+  border: 1px solid rgba(254, 91, 56, 255);
+  height: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.nav-link {
+  padding: 0 4rem 0 4rem;
+  cursor: pointer;
+  background: transparent;
+  color: rgba(254, 91, 56, 255);
+}
+.nav-link:hover {
+  color: rgb(155, 52, 0);
 }
