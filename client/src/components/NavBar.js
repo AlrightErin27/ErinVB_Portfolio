@@ -10,6 +10,9 @@ function NavBar() {
   function handleResume() {
     setLocal("resume");
   }
+  function handleProjects() {
+    setLocal("projects");
+  }
 
   return (
     <nav>
@@ -32,6 +35,17 @@ function NavBar() {
           onClick={handleResume}
         >
           Resume
+        </NavLink>
+      )}
+
+      {local === "projects" ? null : (
+        <NavLink
+          to="/projects"
+          style={{ textDecoration: "none" }}
+          className="nav-link"
+          onClick={handleProjects}
+        >
+          Projects
         </NavLink>
       )}
     </nav>

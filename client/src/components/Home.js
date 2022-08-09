@@ -21,6 +21,7 @@ function Home() {
             src={Logo}
             alt="Erin's Logo"
             className="rotate linear infinite"
+            id="H-logo"
           />
         </div>
 

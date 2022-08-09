@@ -41,6 +41,10 @@
   display: flex;
   justify-content: center;
 }
+#H-logo {
+  height: 40rem;
+  width: 40rem;
+}
 #H-list-title {
   font-family: "Josefin Slab", serif;
   font-family: "Unica One", cursive;
@@ -78,13 +82,14 @@
 
 /* NAV BAR */
 nav {
-  border: 1px solid rgba(254, 91, 56, 255);
+  /* border: 1px solid rgba(254, 91, 56, 255); */
   height: 2rem;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+  background-color: rgba(240, 248, 255, 0.441);
 }
 .nav-link {
   padding: 0 4rem 0 4rem;
@@ -201,5 +206,12 @@ nav {
 .r-text {
   color: rgb(0, 0, 123);
   font-weight: bold;
+  background-color: transparent;
+}
+/* PROJECTS PAGE */
+.pro-con {
+  display: flex;
+}
+.cone {
   background-color: transparent;
 }
